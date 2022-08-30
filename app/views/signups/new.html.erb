@@ -1,0 +1,50 @@
+<div class="header">
+      <div class="container">
+        <h1 class="fade_one">Inovação Cloud</h1>
+        <p class="fade_two">Conecte suas idéias globalmente</p>
+        <a class="btn fade_three" href="#">Saiba Mais</a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li>Cadastre-se</li>
+          <li>Especialistas</li>
+          <li>Patrocínios</li>
+          <li>Sobre Nós</li>
+          <li>Contate-nos</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <img src="https://content.codecademy.com/projects/innovation-cloud/cloud.svg" height="128" width="196">
+        <h2>A conferência de Inovação em Cloud</h2>
+        <p>Conecte-se com as maiores expert's do ramo e compartilhe idéias, brainstorm's, novas soluções para desafios antigos.</p>
+        <p>Ouça líderes da indústria sobre o que funciona ( e o que não funciona ), economizando seu tempo nos projetos mais desafiantes.</p>
+        <p>Aprenda sobre as últimas pesquisas e technologias que você pode usar imediatamente e reinventar o futuro.</p>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Fique conectado.</h2>
+        <p>Receba insights semanais das lideranças deste mercado.</p>
+
+
+        <%= form_for(@signup) do |f| %>
+              <%= f.text_field :email, :placeholder => "seuemail@host.com"  %><br>
+              <%= f.submit "Junte-se a nós", :class =>'btn' %>
+        <% end %>
+
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Conferência Inovação Cloud</p>
+      </div>
+    </div>
